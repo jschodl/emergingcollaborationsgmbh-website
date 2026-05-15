@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &middot; emerging collaborations gmbh</title>
+  <meta name="description" content="Contact emerging collaborations gmbh — Vienna, Austria.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="brand">emerging collaborations gmbh</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1>Contact</h1>
+
+    <p class="muted">
+      For inquiries, please use the contact details below.
+    </p>
+
+    <h3>By email</h3>
+    <p>
+      <span class="email" data-u="eciffo" data-d="moc.snoitaroballocgnigreme">office [at] emergingcollaborations [dot] com</span>
+    </p>
+
+    <h3>By post</h3>
+    <address class="address">
+      emerging collaborations gmbh<br>
+      Hackenberggasse 15/2/6<br>
+      1190 Wien<br>
+      Austria
+    </address>
+
+    <p class="muted">
+      For legal disclosures, see our <a href="impressum.html">Impressum</a>.
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+    <p class="copy">&copy; 2026 emerging collaborations gmbh</p>
+  </div>
+</footer>
+
+<script>
+  // Email obfuscation: data attributes hold the address parts reversed,
+  // assembled into a mailto link at runtime. Defeats naive HTML scrapers
+  // while remaining accessible to users with JavaScript enabled.
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.email').forEach(function (el) {
+      var u = el.getAttribute('data-u');
+      var d = el.getAttribute('data-d');
+      if (u && d) {
+        var user = u.split('').reverse().join('');
+        var domain = d.split('').reverse().join('');
+        var addr = user + '@' + domain;
+        el.innerHTML = '<a href="mailto:' + addr + '">' + addr + '</a>';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

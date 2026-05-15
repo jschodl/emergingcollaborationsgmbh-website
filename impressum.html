@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum &middot; emerging collaborations gmbh</title>
+  <meta name="description" content="Impressum gemäß § 5 ECG und § 14 UGB.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="brand">emerging collaborations gmbh</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1>Impressum</h1>
+
+    <p class="muted">
+      Offenlegung gem&auml;&szlig; &sect; 5 ECG und &sect; 14 UGB.
+    </p>
+
+    <div class="legal">
+
+      <h2>Medieninhaber, Herausgeber und Diensteanbieter</h2>
+      <dl class="facts">
+        <dt>Firmenwortlaut</dt>
+        <dd>emerging collaborations gmbh</dd>
+
+        <dt>Anschrift</dt>
+        <dd>Hackenberggasse 15/2/6<br>1190 Wien<br>&Ouml;sterreich</dd>
+
+        <dt>E&#8209;Mail</dt>
+        <dd><span class="email" data-u="eciffo" data-d="moc.snoitaroballocgnigreme">office [at] emergingcollaborations [dot] com</span></dd>
+
+        <dt>Firmenbuchnummer</dt>
+        <dd>FN 341484h</dd>
+
+        <dt>Firmenbuchgericht</dt>
+        <dd>Handelsgericht Wien</dd>
+
+        <dt>UID&#8209;Nummer</dt>
+        <dd>ATU65672168</dd>
+
+        <dt>Vertretungsbefugter Gesch&auml;ftsf&uuml;hrer</dt>
+        <dd>Josef Schodl</dd>
+
+        <dt>Unternehmensgegenstand</dt>
+        <dd>Zusammenf&uuml;hren von Personen zum Zwecke der gemeinsamen Freizeitgestaltung</dd>
+      </dl>
+
+      <h2>Kammerzugeh&ouml;rigkeit</h2>
+      <p>
+        Wirtschaftskammer &Ouml;sterreich (WKO), Wirtschaftskammer Wien,<br>
+        Fachgruppe Pers&ouml;nliche Dienstleister.
+      </p>
+
+      <h2>Anwendbare Rechtsvorschriften</h2>
+      <p>
+        Gewerbeordnung (GewO), abrufbar unter <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener noreferrer">www.ris.bka.gv.at</a>.
+      </p>
+
+      <h2>Beh&ouml;rde gem. ECG / Gewerbebeh&ouml;rde</h2>
+      <p>
+        Magistratisches Bezirksamt f&uuml;r den 19. Bezirk Wien.
+      </p>
+
+      <h2>Berufsbezeichnung und verleihender Staat</h2>
+      <p>
+        Gewerbe, verliehen in &Ouml;sterreich.
+      </p>
+
+      <h2>Verbraucherstreitbeilegung</h2>
+      <p>
+        Die emerging collaborations gmbh ist weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+
+      <h2>Haftung f&uuml;r Inhalte</h2>
+      <p>
+        Die Inhalte dieser Website werden mit Sorgfalt erstellt. F&uuml;r die Richtigkeit, Vollst&auml;ndigkeit und Aktualit&auml;t der Inhalte k&ouml;nnen wir jedoch keine Gew&auml;hr &uuml;bernehmen.
+      </p>
+
+      <h2>Haftung f&uuml;r Links</h2>
+      <p>
+        Diese Website enth&auml;lt gegebenenfalls Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      </p>
+
+      <h2>Urheberrecht</h2>
+      <p>
+        Die durch die Betreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem &ouml;sterreichischen Urheberrecht. Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+      </p>
+
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+    <p class="copy">&copy; 2026 emerging collaborations gmbh</p>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.email').forEach(function (el) {
+      var u = el.getAttribute('data-u');
+      var d = el.getAttribute('data-d');
+      if (u && d) {
+        var user = u.split('').reverse().join('');
+        var domain = d.split('').reverse().join('');
+        var addr = user + '@' + domain;
+        el.innerHTML = '<a href="mailto:' + addr + '">' + addr + '</a>';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
