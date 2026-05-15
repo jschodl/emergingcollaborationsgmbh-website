@@ -15,7 +15,7 @@
   --color-muted: #7a736a;
   --color-accent: #5a4434;
   --color-rule: #d8d2c6;
-  --font-display: ui-serif, "Iowan Old Style", "Apple Garamond", "Hoefler Text", Baskerville, "Times New Roman", serif;
+  --font-display: 'Fraunces', ui-serif, "Iowan Old Style", "Apple Garamond", "Hoefler Text", Baskerville, "Times New Roman", serif;
   --font-quote: 'Fraunces', Georgia, "Hoefler Text", Charter, serif;
   --font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --measure: 640px;
@@ -84,6 +84,7 @@ main h1 {
   font-size: clamp(1.75rem, 4.5vw, 2.25rem);
   line-height: 1.25;
   letter-spacing: -0.01em;
+  font-variation-settings: "opsz" 36, "SOFT" 50;
   margin-bottom: 1.25rem;
   color: var(--color-text);
 }
@@ -94,6 +95,7 @@ main h2 {
   font-size: 1.375rem;
   line-height: 1.3;
   letter-spacing: -0.005em;
+  font-variation-settings: "opsz" 24, "SOFT" 50;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   color: var(--color-text);
